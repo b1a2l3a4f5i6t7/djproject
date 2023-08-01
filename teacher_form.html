@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Insert Teacher</title>
+<title>UpdateTeacher</title>
+
+</head>
+<body>
+<form method= "POST">
+<table>
+{{form.as_table}}
+</table>
+<input type= "submit" value="Add Teacher">
+<input type= "submit" value="Update Teacher">
+{% csrf_token %}
+</form>
+</body>
+</html>

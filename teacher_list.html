@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Teacher Page</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Experience</th>
+<th>Subject</th>
+<th>Contact</th>
+</tr>
+{% for s in teacher_list %}
+<tr>
+<td>{{s.id}}</td>
+<td>{{s.name}}</td>
+<td>{{s.exp}}</td>
+<td>{{s.subject}}</td>
+<td>{{s.contact}}</td>
+<td><a href= "/ad/updateteacher/{{s.id}}">Update</a></td>
+</tr>
+{% endfor %}
+</body>
+</html>
